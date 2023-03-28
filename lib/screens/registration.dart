@@ -1,7 +1,9 @@
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:project1/screens/signup.dart';
 import 'package:flutter/material.dart';
-import 'package:project1/screens/login_s.dart';
+import 'package:project1/screens/login.dart';
+
+import 'login_s.dart';
 
 class registration extends StatelessWidget {
   const registration({super.key});

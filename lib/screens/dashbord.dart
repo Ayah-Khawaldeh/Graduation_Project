@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-// import 'package:flutter/src/widgets/framework.dart';
-// import 'package:flutter/src/widgets/placeholder.dart';
+
 import 'package:project1/screens/home.dart';
 import 'package:project1/screens/profile.dart';
 import 'package:project1/screens/registration.dart';
@@ -25,7 +24,7 @@ class _MyWidgetState extends State<dashbord> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.indigo.shade50,
+      backgroundColor: Color(0xFFCED0CC),
       body: SafeArea(
         child: Container(
           margin: const EdgeInsets.only(top: 18, left: 24, right: 24),
@@ -42,14 +41,14 @@ class _MyWidgetState extends State<dashbord> {
                     },
                     child: const Icon(
                       Icons.arrow_back_ios,
-                      color: Colors.indigo,
+                      color: Color(0xFF9BB491),
                     ),
                   ),
                   const RotatedBox(
                     quarterTurns: 135,
                     child: Icon(
                       Icons.bar_chart_rounded,
-                      color: Colors.indigo,
+                      color: Color(0xFF9BB491),
                       size: 10,
                     ),
                   )
@@ -64,7 +63,7 @@ class _MyWidgetState extends State<dashbord> {
                       radius: 180,
                       lineWidth: 14,
                       percent: 0.75,
-                      progressColor: Colors.indigo,
+                      progressColor: Color(0xFF9BB491),
                       center: const Text(
                         '26\u00B0',
                         style: TextStyle(
@@ -93,12 +92,13 @@ class _MyWidgetState extends State<dashbord> {
                     Container(
                       padding: const EdgeInsets.symmetric(vertical: 18),
                       decoration: BoxDecoration(
-                        color: Colors.white,
+                        color: Color(0xFFAEAEAE),
                         borderRadius: BorderRadius.circular(8),
                       ),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
+                          // Color:Colors.indigo,
                           const Padding(
                             padding: EdgeInsets.symmetric(horizontal: 24),
                             child: Text(
@@ -109,6 +109,9 @@ class _MyWidgetState extends State<dashbord> {
                             ),
                           ),
                           Slider(
+                            activeColor: Color(0xFF9BB491),
+                            inactiveColor: Color(0xFFCED0CC),
+                            // thumbColor: Color(0xFF9BB491),
                             value: heating,
                             onChanged: (newHeating) {
                               setState(() => heating = newHeating);
@@ -133,7 +136,7 @@ class _MyWidgetState extends State<dashbord> {
                     Container(
                       padding: const EdgeInsets.symmetric(vertical: 18),
                       decoration: BoxDecoration(
-                        color: Colors.white,
+                        color: Color(0xFFAEAEAE),
                         borderRadius: BorderRadius.circular(10),
                       ),
                       child: Column(
@@ -149,6 +152,8 @@ class _MyWidgetState extends State<dashbord> {
                             ),
                           ),
                           Slider(
+                            activeColor: Color(0xFF9BB491),
+                            inactiveColor: Color(0xFFCED0CC),
                             value: fan,
                             onChanged: (newFan) {
                               setState(() => fan = newFan);
@@ -198,15 +203,9 @@ class _MyWidgetState extends State<dashbord> {
         Container(
           padding: const EdgeInsets.all(18),
           decoration: BoxDecoration(
-            color: isActive ? Colors.indigo : Colors.white,
+            color: isActive ? Color(0xFF9BB491) : Color(0xFFAEAEAE),
             borderRadius: BorderRadius.circular(18),
           ),
-          // child: Image.asset(
-          //   isActive
-          //       ? 'assets/images/registration/splash.png'
-          //       : 'assets/images/registration/splash.png',
-
-          // ),
         ),
         const SizedBox(height: 10),
         Text(
@@ -229,118 +228,18 @@ class _MyWidgetState extends State<dashbord> {
         horizontal: 32,
       ),
       decoration: BoxDecoration(
-        color: isActive ? Colors.indigo : Colors.transparent,
+        // color: isActive ? Color(0xFF9BB491) : Colors.transparent,
+        color: isActive ? Color(0xFF9BB491) : Colors.transparent,
+
         borderRadius: BorderRadius.circular(24),
-        border: Border.all(color: Colors.indigo),
+        border: Border.all(color: Color(0xFF9BB491)),
       ),
       child: Text(
         title,
         style: TextStyle(
-          color: isActive ? Colors.white : Colors.black,
+          color: isActive ? Colors.black : Color.fromARGB(255, 88, 80, 80),
         ),
       ),
     );
   }
 }
-      // backgroundColor: Color(0xFFCED0CC),
-//       bottomNavigationBar: Container(
-//         height: 80,
-//         width: double.infinity,
-//         padding: EdgeInsets.all(10),
-//         color: Color(0xFF9BB491),
-//         child: Padding(
-//           padding: const EdgeInsets.only(bottom: 10),
-//           child: Row(
-//             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-//             children: [
-//               IconButton(
-//                 icon: const Icon(Icons.language),
-//                 tooltip: 'language Icon',
-//                 onPressed: () {
-//                   // return login();
-//                   // print("acount");
-//                   Navigator.push(
-//                     context,
-//                     MaterialPageRoute(
-//                         builder: (context) => const registration()),
-//                   );
-//                 },
-//               ),
-//               IconButton(
-//                 icon: const Icon(Icons.home),
-//                 tooltip: 'Home Icon',
-//                 onPressed: () {
-//                   Navigator.push(
-//                     context,
-//                     MaterialPageRoute(builder: (context) => const home()),
-//                   );
-//                 },
-//               ),
-
-//               //IconButton
-//               IconButton(
-//                 icon: const Icon(Icons.settings),
-//                 tooltip: 'Setting Icon',
-//                 onPressed: () {
-//                   Navigator.push(
-//                     context,
-//                     MaterialPageRoute(builder: (context) => const settings()),
-//                   );
-//                 },
-//               ),
-
-//               IconButton(
-//                 icon: const Icon(Icons.account_circle_rounded),
-//                 tooltip: ' Account Icon',
-//                 onPressed: () {
-//                   // return login();
-//                   // print("acount");
-//                   Navigator.push(
-//                     context,
-//                     MaterialPageRoute(builder: (context) => profile()),
-//                   );
-//                 },
-//               ),
-//               //IconButton
-//             ],
-//           ),
-//         ),
-//       ),
-//       body: CustomScrollView(
-//         slivers: [
-//           SliverAppBar(
-//             expandedHeight: 100,
-//             forceElevated: true,
-//             floating: true,
-//             backgroundColor: Color(0xFF9BB491),
-//             leading: IconButton(
-//               icon: Icon(
-//                 Icons.settings,
-//                 size: 30,
-//               ),
-//               onPressed: () {},
-//             ),
-//             flexibleSpace: FlexibleSpaceBar(
-//               title: Text("Dashbord"),
-//               centerTitle: true,
-//             ),
-//             actions: [
-//               IconButton(
-//                   onPressed: () {},
-//                   icon: Icon(
-//                     Icons.add,
-//                     size: 30,
-//                   )),
-//             ],
-//           ),
-//           // SliverList(
-//           //   delegate: SliverChildBuilderDelegate(
-//           //     // childCount: 2,
-//           //     // (BuildContex context,int  index) )
-//           //   ),
-//           // ),
-//         ],
-//       ),
-//     );
-//   }
-// }

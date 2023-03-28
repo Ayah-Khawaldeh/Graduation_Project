@@ -1,6 +1,7 @@
 import 'package:curved_labeled_navigation_bar/curved_navigation_bar.dart';
 import 'package:curved_labeled_navigation_bar/curved_navigation_bar_item.dart';
 import 'package:flutter/material.dart';
+import 'package:project1/screens/friend.dart';
 import 'package:project1/screens/home.dart';
 import 'package:project1/screens/profile.dart';
 import 'package:project1/screens/settings.dart';
@@ -35,7 +36,8 @@ class _HomeLayoutState extends State<HomeLayout> {
   int currentIndex = 0;
   List<Widget> screens = [
     const home(),
-    const profile(),
+    const friend(),
+    // const profile(),
     const settings(),
   ];
   @override
@@ -56,7 +58,7 @@ class _HomeLayoutState extends State<HomeLayout> {
             CurvedNavigationBarItem(
                 child: Icon(Icons.home, color: Colors.black)),
             CurvedNavigationBarItem(
-                child: Icon(Icons.person, color: Colors.black)),
+                child: Icon(Icons.face, color: Colors.black)),
             CurvedNavigationBarItem(
                 child: Icon(Icons.menu, color: Colors.black)),
           ]),

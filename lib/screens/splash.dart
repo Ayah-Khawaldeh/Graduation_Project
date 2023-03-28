@@ -3,8 +3,7 @@ import 'dart:async';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import 'package:flutter/material.dart';
-import 'package:project1/screens/home.dart';
-import 'package:project1/screens/home_layout.dart';
+import 'package:project1/screens/registration.dart';
 
 // class splash extends StatelessWidget {
 //   const splash({super.key});
@@ -20,7 +19,7 @@ import 'package:project1/screens/home_layout.dart';
 //           ),
 //         ),
 //       ),
-//     );شغل يسطا
+//     );
 //   }
 // }
 class splash extends StatefulWidget {
@@ -31,33 +30,39 @@ class splash extends StatefulWidget {
 }
 
 class _splashState extends State<splash> {
-   @override
+  @override
   void initState() {
     super.initState();
 
     Timer(
-        Duration(seconds: 4),() =>Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => HomeLayout ())));
+        Duration(seconds: 4),
+        () => Navigator.pushReplacement(
+            context, MaterialPageRoute(builder: (context) => registration())));
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
         width: double.infinity.w,
         height: double.infinity.h,
-        decoration: const BoxDecoration(
+        decoration: BoxDecoration(
           gradient: LinearGradient(
             begin: Alignment.topRight,
             end: Alignment.bottomRight,
             // colors: [Color(0xFF9BB491), Color(0xFFFFb6c1)],
-                        // colors: [Color(0xFF9BB491), Color(0xFFFFb6c1)],
-            colors: [ Color(0xFFFFB6C1),Color(0xFFE3CE82),
-                    Color(0xFF9BB491), Color(0xFF9DC7DF),
-                     Color(0xFFCED0CC)],
-                        // colors:  Colors.lightBlue,
-      // backgroundColor: Color(0xFFFCECDA),
+            // colors: [Color(0xFF9BB491), Color(0xFFFFb6c1)],
+            colors: [
+              Color(0xFFFFB6C1),
+              Color(0xFFE3CE82),
+              Color(0xFF9BB491),
+              Color(0xFF9DC7DF),
+              Color(0xFFCED0CC)
+            ],
+            // colors:  Colors.lightBlue,
+            // backgroundColor: Color(0xFFFCECDA),
 
             // colors: [Color(0xFF9BB491), Color(0xFFE3CE82)],
-
           ),
         ),
         child: Column(
