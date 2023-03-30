@@ -31,15 +31,8 @@ class _splashState extends State<splash> {
           gradient: LinearGradient(
             begin: Alignment.topRight,
             end: Alignment.bottomRight,
-            colors: [
-              // Color(0xFFFFB6C1),
-              Color(0xFFE3CE82),
-              Color(0xFF9BB491),
-              // Color(0xFF9DC7DF),
-              // Color(0xFFCED0CC)
-              // Color(0xFFFFB6C1),
-              // Color(0xFF9DC7DF),
-            ],
+            colors: [Color(0xFFFFB6C1), Color(0xFF9DC7DF), Color(0xFFCED0CC)],
+
             // colors:  Colors.lightBlue,
             // backgroundColor: Color(0xFFFCECDA),
 

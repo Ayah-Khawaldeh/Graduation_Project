@@ -28,11 +28,11 @@ class _QuizState extends State<Quiz> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-            backgroundColor: Color(0xFFCED0CC),
-
-      // appBar: AppBar(
-      //   title: Text('Test'),
-      // ),
+      backgroundColor: Color(0xFFCED0CC),
+      appBar: AppBar(
+        title: Text('QUIZ'),
+        backgroundColor: Color(0xFF9BB491),
+      ),
       body: Container(
         padding: EdgeInsets.all(16.0),
         child: Column(

@@ -67,14 +67,14 @@ class Learn extends StatelessWidget {
                                   mainAxisAlignment:
                                       MainAxisAlignment.spaceEvenly,
                                   children: [
-                                    Catigorys(
+                                    Catigorysq(
                                       image: 'assets/registration/splash.png',
-                                      text: 'Learn 1',
+                                      text: 'Test 1',
                                       color: Color(0xFFFD8C44),
                                     ),
-                                    Catigorys(
+                                    Catigorysq(
                                       image: 'assets/registration/splash.png',
-                                      text: 'Learn 2',
+                                      text: 'Test 2',
                                       color: Color(0xFFA885FF),
                                     )
                                   ],

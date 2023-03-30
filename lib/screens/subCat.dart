@@ -80,7 +80,7 @@ class subCat extends StatelessWidget {
                                   children: [
                                     CatigorySub(
                                       image: 'assets/registration/splash.png',
-                                      text: 'Numbers',
+                                      text: 'Food',
                                       color: Color(0xFF47B4FF),
                                     ),
                                     CatigorySub(

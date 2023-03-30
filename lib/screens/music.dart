@@ -67,12 +67,12 @@ class Music extends StatelessWidget {
                                   mainAxisAlignment:
                                       MainAxisAlignment.spaceEvenly,
                                   children: [
-                                    Catigorys(
+                                    Catigorysm(
                                       image: 'assets/registration/splash.png',
                                       text: 'Sound 1',
                                       color: Color(0xFFFD8C44),
                                     ),
-                                    Catigorys(
+                                    Catigorysm(
                                       image: 'assets/registration/splash.png',
                                       text: 'Sound 2',
                                       color: Color(0xFFA885FF),
@@ -86,12 +86,12 @@ class Music extends StatelessWidget {
                                   mainAxisAlignment:
                                       MainAxisAlignment.spaceEvenly,
                                   children: [
-                                    Catigorys(
+                                    Catigorysm(
                                       image: 'assets/registration/splash.png',
                                       text: 'Sound 3',
                                       color: Color(0xFF47B4FF),
                                     ),
-                                    Catigorys(
+                                    Catigorysm(
                                       image: 'assets/registration/splash.png',
                                       text: ' Sound 4',
                                       color: Color(0xFFFD8C44),
@@ -105,12 +105,12 @@ class Music extends StatelessWidget {
                                   mainAxisAlignment:
                                       MainAxisAlignment.spaceEvenly,
                                   children: [
-                                    Catigorys(
+                                    Catigorysm(
                                       image: 'assets/registration/splash.png',
                                       text: 'Sound 5',
                                       color: Color(0xFFFD8C44),
                                     ),
-                                    Catigorys(
+                                    Catigorysm(
                                       image: 'assets/registration/splash.png',
                                       text: 'Sound 6',
                                       color: Color(0xFFA885FF),
@@ -124,12 +124,12 @@ class Music extends StatelessWidget {
                                   mainAxisAlignment:
                                       MainAxisAlignment.spaceEvenly,
                                   children: [
-                                    Catigorys(
+                                    Catigorysm(
                                       image: 'assets/registration/splash.png',
                                       text: 'Sound 7',
                                       color: Color(0xFF47B4FF),
                                     ),
-                                    Catigorys(
+                                    Catigorysm(
                                       image: 'assets/registration/splash.png',
                                       text: 'Sound 8',
                                       color: Color(0xFFFD8C44),

@@ -12,6 +12,7 @@ import '../screens/Learn.dart';
 import '../screens/feel.dart';
 import '../screens/game1.dart';
 import '../screens/music.dart';
+import '../screens/music1.dart';
 import '../screens/play.dart';
 import '../screens/quiz.dart';
 import '../screens/stories.dart';
@@ -702,6 +703,104 @@ class Catigorysp extends StatelessWidget {
         Navigator.push(
           context,
           MaterialPageRoute(builder: (context) => Game1()),
+        );
+      },
+    );
+  }
+}
+
+class Catigorysq extends StatelessWidget {
+  String image;
+  String text;
+  Color color;
+
+  Catigorysq({required this.image, required this.text, required this.color});
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      child: Container(
+        height: 140,
+        width: 150,
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(20),
+          color: Color(0x9F3D416E),
+        ),
+        child: Column(
+          children: [
+            Image.asset(
+              image,
+              width: 80,
+              height: 80,
+              // alignment: Alignment.center,
+            ),
+            const SizedBox(
+              height: 7,
+            ),
+            Text(
+              text,
+              style: TextStyle(
+                color: color,
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ],
+        ),
+      ),
+      onTap: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => Quiz()),
+        );
+      },
+    );
+  }
+}
+
+class Catigorysm extends StatelessWidget {
+  String image;
+  String text;
+  Color color;
+
+  Catigorysm({required this.image, required this.text, required this.color});
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      child: Container(
+        height: 140,
+        width: 150,
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(20),
+          color: Color(0x9F3D416E),
+        ),
+        child: Column(
+          children: [
+            Image.asset(
+              image,
+              width: 80,
+              height: 80,
+              // alignment: Alignment.center,
+            ),
+            const SizedBox(
+              height: 7,
+            ),
+            Text(
+              text,
+              style: TextStyle(
+                color: color,
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ],
+        ),
+      ),
+      onTap: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => Music1()),
         );
       },
     );
