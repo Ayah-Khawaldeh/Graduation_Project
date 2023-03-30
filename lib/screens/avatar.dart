@@ -78,14 +78,23 @@ class _MyHomePageState extends State<avatar> {
               Spacer(flex: 2),
               Expanded(
                 flex: 3,
-                child: Container(
-                  color: Color(0xFF9BB491),
+                child: SizedBox(
                   height: 35,
                   child: ElevatedButton.icon(
-                    icon: Icon(Icons.edit),
-                    label: Text("Customize"),
+                    icon: const Icon(Icons.face),
+                    label: const Text(
+                      "Customize",
+                    ),
+                    style: ElevatedButton.styleFrom(
+                      foregroundColor: Colors.black,
+                      backgroundColor: Color(0xFF9BB491), //elevation of button
+                      shape: RoundedRectangleBorder(
+                          //to set border radius to button
+                          borderRadius: BorderRadius.circular(20)),
+                      //content padding inside button
+                    ),
                     onPressed: () => Navigator.push(context,
-                        new MaterialPageRoute(builder: (context) => NewPage())),
+                        MaterialPageRoute(builder: (context) => NewPage())),
                   ),
                 ),
               ),
@@ -109,80 +118,6 @@ class NewPage extends StatelessWidget {
     var _width = MediaQuery.of(context).size.width;
     return Scaffold(
       backgroundColor: Color(0xFFCED0CC),
-      bottomNavigationBar: Container(
-        height: 80,
-        width: double.infinity,
-        padding: EdgeInsets.all(10),
-        color: Color(0xFF9BB491),
-        // decoration: BoxDecoration(
-        //   borderRadius: BorderRadius.circular(20),
-        //   // color: Color(0x9F3D416E),
-        // ),
-        // Color(0xFFFFB6C1),
-
-        // Color(0xFFE3CE82),
-        // Color(0xFF9BB491),
-        // // Color(0xFFCED0CC),
-        // Color(0xFF9DC7DF),
-        child: Padding(
-          padding: const EdgeInsets.only(bottom: 10),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              IconButton(
-                icon: const Icon(Icons.language),
-                tooltip: 'language Icon',
-                onPressed: () {
-                  // return login();
-                  // print("acount");
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => const registration()),
-                  );
-                },
-              ),
-              IconButton(
-                icon: const Icon(Icons.home),
-                tooltip: 'Home Icon',
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => const home()),
-                  );
-                },
-              ),
-
-              //IconButton
-              IconButton(
-                icon: const Icon(Icons.settings),
-                tooltip: 'Setting Icon',
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => const settings()),
-                  );
-                },
-              ),
-
-              IconButton(
-                icon: FluttermojiCircleAvatar(
-                  backgroundColor: Colors.blueGrey,
-                  radius: 100,
-                ),
-                tooltip: ' Account Icon',
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => profile()),
-                  );
-                },
-              ),
-              //IconButton
-            ],
-          ),
-        ),
-      ),
       body: Center(
         child: SingleChildScrollView(
           child: Column(
@@ -201,7 +136,7 @@ class NewPage extends StatelessWidget {
                   children: [
                     Text(
                       "Customize:",
-                      style: Theme.of(context).textTheme.headline6,
+                      style: Theme.of(context).textTheme.titleLarge,
                     ),
                     Spacer(),
                     FluttermojiSaveWidget(
@@ -215,7 +150,6 @@ class NewPage extends StatelessWidget {
                   ],
                 ),
               ),
-              // ignore: prefer_const_constructors
               Padding(
                 padding:
                     const EdgeInsets.symmetric(horizontal: 8.0, vertical: 30),

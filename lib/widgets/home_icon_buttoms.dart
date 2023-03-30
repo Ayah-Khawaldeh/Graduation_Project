@@ -1,10 +1,23 @@
 // import 'dart:js_util';
 
+import 'dart:collection';
+
 import 'package:flutter/material.dart';
 import 'package:project1/screens/single.dart';
 // import 'package:project1/screens/sub.dart';
 import 'package:project1/screens/cat.dart';
 import 'package:project1/screens/subCat.dart';
+
+import '../screens/Learn.dart';
+import '../screens/feel.dart';
+import '../screens/game1.dart';
+import '../screens/music.dart';
+import '../screens/play.dart';
+import '../screens/quiz.dart';
+import '../screens/stories.dart';
+import '../screens/sub.dart';
+import '../screens/videos.dart';
+import '../screens/want.dart';
 
 class Catigorys extends StatelessWidget {
   String image;
@@ -48,7 +61,7 @@ class Catigorys extends StatelessWidget {
       onTap: () {
         Navigator.push(
           context,
-          MaterialPageRoute(builder: (context) => cat()),
+          MaterialPageRoute(builder: (context) => single()),
         );
       },
     );
@@ -136,7 +149,7 @@ class Catigorycat extends StatelessWidget {
               text,
               style: TextStyle(
                 color: color,
-                fontSize: 18,
+                fontSize: 16.5,
                 fontWeight: FontWeight.bold,
               ),
             ),
@@ -146,7 +159,7 @@ class Catigorycat extends StatelessWidget {
       onTap: () {
         Navigator.push(
           context,
-          MaterialPageRoute(builder: (context) => single()),
+          MaterialPageRoute(builder: (context) => subCat()),
         );
       },
     );
@@ -244,7 +257,7 @@ class CatigorySub extends StatelessWidget {
       onTap: () {
         Navigator.push(
           context,
-          MaterialPageRoute(builder: (context) => single()),
+          MaterialPageRoute(builder: (context) => Learn()),
         );
       },
     );
@@ -295,6 +308,400 @@ class CatigorySingle extends StatelessWidget {
         Navigator.push(
           context,
           MaterialPageRoute(builder: (context) => single()),
+        );
+      },
+    );
+  }
+}
+
+class Catigorytest extends StatelessWidget {
+  String image;
+  String text;
+  Color color;
+
+  Catigorytest({required this.image, required this.text, required this.color});
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      child: Container(
+        height: 100,
+        width: 100,
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(20),
+          color: Color(0x9F3D416E),
+        ),
+        child: Column(
+          children: [
+            Image.asset(
+              image,
+              width: 50,
+              height: 50,
+              // alignment: Alignment.center,
+            ),
+            SizedBox(
+              height: 7,
+            ),
+            Text(
+              text,
+              style: TextStyle(
+                color: color,
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ],
+        ),
+      ),
+      onTap: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => Quiz()),
+        );
+      },
+    );
+  }
+}
+
+class Catigoryplay extends StatelessWidget {
+  String image;
+  String text;
+  Color color;
+
+  Catigoryplay({required this.image, required this.text, required this.color});
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      child: Container(
+        height: 110,
+        width: 150,
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(20),
+          color: Color(0x9F3D416E),
+        ),
+        child: Column(
+          children: [
+            Image.asset(
+              image,
+              width: 70,
+              height: 70,
+              // alignment: Alignment.center,
+            ),
+            SizedBox(
+              height: 7,
+            ),
+            Text(
+              text,
+              style: TextStyle(
+                color: color,
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ],
+        ),
+      ),
+      onTap: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => Play()),
+        );
+      },
+    );
+  }
+}
+
+class Catigorywant extends StatelessWidget {
+  String image;
+  String text;
+  Color color;
+
+  Catigorywant({required this.image, required this.text, required this.color});
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      child: Container(
+        height: 140,
+        width: 150,
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(20),
+          color: Color(0x9F3D416E),
+        ),
+        child: Column(
+          children: [
+            Image.asset(
+              image,
+              width: 80,
+              height: 80,
+              // alignment: Alignment.center,
+            ),
+            const SizedBox(
+              height: 7,
+            ),
+            Text(
+              text,
+              style: TextStyle(
+                color: color,
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ],
+        ),
+      ),
+      onTap: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => Want()),
+        );
+      },
+    );
+  }
+}
+
+class Catigoryfeel extends StatelessWidget {
+  String image;
+  String text;
+  Color color;
+
+  Catigoryfeel({required this.image, required this.text, required this.color});
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      child: Container(
+        height: 140,
+        width: 150,
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(20),
+          color: Color(0x9F3D416E),
+        ),
+        child: Column(
+          children: [
+            Image.asset(
+              image,
+              width: 80,
+              height: 80,
+              // alignment: Alignment.center,
+            ),
+            const SizedBox(
+              height: 7,
+            ),
+            Text(
+              text,
+              style: TextStyle(
+                color: color,
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ],
+        ),
+      ),
+      onTap: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => Feel()),
+        );
+      },
+    );
+  }
+}
+
+class Catigorystories extends StatelessWidget {
+  String image;
+  String text;
+  Color color;
+
+  Catigorystories(
+      {required this.image, required this.text, required this.color});
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      child: Container(
+        height: 110,
+        width: 150,
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(20),
+          color: Color(0x9F3D416E),
+        ),
+        child: Column(
+          children: [
+            Image.asset(
+              image,
+              width: 70,
+              height: 70,
+              // alignment: Alignment.center,
+            ),
+            const SizedBox(
+              height: 7,
+            ),
+            Text(
+              text,
+              style: TextStyle(
+                color: color,
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ],
+        ),
+      ),
+      onTap: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => Stories()),
+        );
+      },
+    );
+  }
+}
+
+class Catigoryvideos extends StatelessWidget {
+  String image;
+  String text;
+  Color color;
+
+  Catigoryvideos(
+      {required this.image, required this.text, required this.color});
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      child: Container(
+        height: 110,
+        width: 150,
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(20),
+          color: Color(0x9F3D416E),
+        ),
+        child: Column(
+          children: [
+            Image.asset(
+              image,
+              width: 70,
+              height: 70,
+              // alignment: Alignment.center,
+            ),
+            const SizedBox(
+              height: 7,
+            ),
+            Text(
+              text,
+              style: TextStyle(
+                color: color,
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ],
+        ),
+      ),
+      onTap: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => Videos()),
+        );
+      },
+    );
+  }
+}
+
+class Catigorymusic extends StatelessWidget {
+  String image;
+  String text;
+  Color color;
+
+  Catigorymusic({required this.image, required this.text, required this.color});
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      child: Container(
+        height: 110,
+        width: 150,
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(20),
+          color: Color(0x9F3D416E),
+        ),
+        child: Column(
+          children: [
+            Image.asset(
+              image,
+              width: 70,
+              height: 70,
+              // alignment: Alignment.center,
+            ),
+            const SizedBox(
+              height: 7,
+            ),
+            Text(
+              text,
+              style: TextStyle(
+                color: color,
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ],
+        ),
+      ),
+      onTap: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => Music()),
+        );
+      },
+    );
+  }
+}
+
+class Catigorysp extends StatelessWidget {
+  String image;
+  String text;
+  Color color;
+
+  Catigorysp({required this.image, required this.text, required this.color});
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      child: Container(
+        height: 140,
+        width: 150,
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(20),
+          color: Color(0x9F3D416E),
+        ),
+        child: Column(
+          children: [
+            Image.asset(
+              image,
+              width: 80,
+              height: 80,
+              // alignment: Alignment.center,
+            ),
+            const SizedBox(
+              height: 7,
+            ),
+            Text(
+              text,
+              style: TextStyle(
+                color: color,
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ],
+        ),
+      ),
+      onTap: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => Game1()),
         );
       },
     );

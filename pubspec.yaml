@@ -45,6 +45,8 @@ dependencies:
   profile: ^0.0.1
   alan_voice: 3.0.0
   curved_labeled_navigation_bar: ^2.0.2
+  zflutter: ^0.0.1+2
+  # model_viewer_plus: ^1.5.0
 
 
 
@@ -82,7 +84,7 @@ flutter:
   # assets:
   #   - images/Logo.png
   assets:
-    - assets/images/registration/splash.png
+    - assets/registration/splash.png
 
   
 

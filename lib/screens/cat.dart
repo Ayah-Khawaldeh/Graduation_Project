@@ -5,7 +5,6 @@ import 'package:project1/screens/profile.dart';
 import 'package:project1/screens/registration.dart';
 import 'package:project1/screens/settings.dart';
 
-
 import 'home.dart';
 
 class cat extends StatelessWidget {
@@ -79,7 +78,7 @@ class cat extends StatelessWidget {
                             height: 15,
                           ),
                           Padding(
-                            padding: const EdgeInsets.only(top: 15),
+                            padding: EdgeInsets.only(top: 15),
                             child: Column(
                               children: [
                                 Row(
@@ -87,127 +86,91 @@ class cat extends StatelessWidget {
                                       MainAxisAlignment.spaceEvenly,
                                   children: [
                                     Catigorycat(
-                                      image:
-                                          'assets/images/registration/splash.png',
-                                      text: 'Want',
-                                      color: const Color(0xFF47B4FF),
+                                      image: 'assets/registration/splash.png',
+                                      text: 'Arabic',
+                                      color: Color(0xFF47B4FF),
                                     ),
                                     Catigorycat(
-                                      image:
-                                          'assets/images/registration/splash.png',
-                                      text: 'Feel',
-                                      color: const Color(0xFFA885FF),
+                                      image: 'assets/registration/splash.png',
+                                      text: 'English',
+                                      color: Color(0xFFA885FF),
                                     ),
                                     Catigorycat(
-                                      image:
-                                          'assets/images/registration/splash.png',
-                                      text: 'Stories',
-                                      color: const Color(0xFFE3CE82),
+                                      image: 'assets/registration/splash.png',
+                                      text: 'Mathematics',
+                                      color: Color(0xFFE3CE82),
                                     )
                                   ],
                                 ),
-                                const SizedBox(
+                                SizedBox(
                                   height: 15,
                                 ),
                                 Row(
                                   mainAxisAlignment:
                                       MainAxisAlignment.spaceEvenly,
                                   children: [
-                                    Catigoryscat(
-                                      image:
-                                          'assets/images/registration/splash.png',
-                                      text: 'Learn',
-                                      color: const Color(0xFFFD47DF),
-                                    ),
-                                    Catigoryscat(
-                                      image:
-                                          'assets/images/registration/splash.png',
-                                      text: 'Tests',
-                                      color: const Color(0xFFFD8C44),
+                                    Catigorycat(
+                                      image: 'assets/registration/splash.png',
+                                      text: 'Sciences',
+                                      color: Color(0xFFFD47DF),
                                     ),
                                     Catigorycat(
-                                      image:
-                                          'assets/images/registration/splash.png',
-                                      text: 'Play',
-                                      color: const Color(0xFFFFB6C1),
+                                      image: 'assets/registration/splash.png',
+                                      text: 'General',
+                                      color: Color(0xFFFD8C44),
+                                    ),
+                                    Catigorycat(
+                                      image: 'assets/registration/splash.png',
+                                      text: 'Health',
+                                      color: Color(0xFFFFB6C1),
                                     ),
                                   ],
                                 ),
-                                const SizedBox(height: 15),
+                                SizedBox(height: 15),
                                 Row(
                                   mainAxisAlignment:
                                       MainAxisAlignment.spaceEvenly,
                                   children: [
                                     Catigorycat(
-                                      image:
-                                          'assets/images/registration/splash.png',
-                                      text: 'Play',
-                                      color: const Color(0xFF7DA4FF),
+                                      image: 'assets/registration/splash.png',
+                                      text: 'Arabic',
+                                      color: Color(0xFF47B4FF),
                                     ),
                                     Catigorycat(
-                                      image:
-                                          'assets/images/registration/splash.png',
-                                      text: 'Play',
-                                      color: const Color(0xFFFFB6C1),
+                                      image: 'assets/registration/splash.png',
+                                      text: 'English',
+                                      color: Color(0xFFA885FF),
                                     ),
                                     Catigorycat(
-                                      image:
-                                          'assets/images/registration/splash.png',
-                                      text: 'Stories',
-                                      color: const Color(0xFF43DC64),
+                                      image: 'assets/registration/splash.png',
+                                      text: 'Mathematics',
+                                      color: Color(0xFFE3CE82),
                                     )
                                   ],
                                 ),
-                                const SizedBox(height: 15),
+                                SizedBox(height: 15),
                                 Row(
                                   mainAxisAlignment:
                                       MainAxisAlignment.spaceEvenly,
                                   children: [
                                     Catigorycat(
-                                      image:
-                                          'assets/images/registration/splash.png',
-                                      text: 'Feel',
-                                      color: const Color(0xFFA885FF),
+                                      image: 'assets/registration/splash.png',
+                                      text: 'Sciences',
+                                      color: Color(0xFFFD47DF),
                                     ),
                                     Catigorycat(
-                                      image:
-                                          'assets/images/registration/splash.png',
-                                      text: 'Play',
-                                      color: const Color(0xFFFFB6C1),
+                                      image: 'assets/registration/splash.png',
+                                      text: 'General',
+                                      color: Color(0xFFFD8C44),
                                     ),
                                     Catigorycat(
-                                      image:
-                                          'assets/images/registration/splash.png',
-                                      text: 'Stories',
-                                      color: const Color(0xFFE3CE82),
-                                    )
+                                      image: 'assets/registration/splash.png',
+                                      text: 'Health',
+                                      color: Color(0xFFFFB6C1),
+                                    ),
                                   ],
                                 ),
-                                const SizedBox(height: 15),
-                                Row(
-                                  mainAxisAlignment:
-                                      MainAxisAlignment.spaceEvenly,
-                                  children: [
-                                    Catigorycat(
-                                      image:
-                                          'assets/images/registration/splash.png',
-                                      text: 'Feel',
-                                      color: const Color(0xFFA885FF),
-                                    ),
-                                    Catigorycat(
-                                      image:
-                                          'assets/images/registration/splash.png',
-                                      text: 'Play',
-                                      color: const Color(0xFFFFB6C1),
-                                    ),
-                                    Catigorycat(
-                                      image:
-                                          'assets/images/registration/splash.png',
-                                      text: 'Stories',
-                                      color: const Color(0xFFE3CE82),
-                                    )
-                                  ],
-                                ),
+                                SizedBox(height: 15),
                               ],
                             ),
                           ),

@@ -458,7 +458,7 @@ class _MyWidgetState extends State<profile> {
 //                                 //   children: [
 //                                 //     Catigory(
 //                                 //       image:
-//                                 //           'assets/images/registration/splash.png',
+//                                 //           'assets/registration/splash.png',
 //                                 //       text: 'Learn',
 //                                 //       color: Color(0xFFFD47DF),
 //                                 //     ),

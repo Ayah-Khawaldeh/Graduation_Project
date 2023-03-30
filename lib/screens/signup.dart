@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:project1/screens/avatar.dart';
-import 'package:project1/screens/home.dart';
 
 class signup extends StatelessWidget {
   const signup({super.key});
@@ -21,13 +20,10 @@ class signup extends StatelessWidget {
               gradient: LinearGradient(
                 begin: Alignment.topRight,
                 end: Alignment.bottomRight,
-                // colors: [Color(0xFF9BB491), Color(0xFFFFb6c1)],
-                // colors: [Color(0xFF9BB491), Color(0xFFFFb6c1)],
-                colors: [Color(0xFF9DC7DF), Color(0xFFCED0CC)],
-                // colors:  Colors.lightBlue,
-                // backgroundColor: Color(0xFFFCECDA),
-
-                // colors: [Color(0xFF9BB491), Color(0xFFE3CE82)],
+                colors: [
+                  Color(0xFFFFB6C1),
+                  Color(0xFF9DC7DF),
+                ],
               ),
             ),
             padding: EdgeInsets.symmetric(horizontal: 30, vertical: 30),
@@ -37,7 +33,7 @@ class signup extends StatelessWidget {
                 // width: 20,
               ),
               Image.asset(
-                "assets/images/registration/splash.png",
+                "assets/registration/splash.png",
                 height: 150,
               ),
               Text(
@@ -55,10 +51,19 @@ class signup extends StatelessWidget {
                 keyboardType: TextInputType.name,
                 decoration: InputDecoration(
                   labelText: "User Name",
-                  // prefixIcon: Icon(
-                  //   Icon.email,) ,
+                  hintText: 'Enter your username',
                   border: OutlineInputBorder(),
+                  icon: Icon(Icons.person),
                 ),
+                validator: (value) {
+                  if (value!.isEmpty) {
+                    return 'Please enter your username';
+                  }
+                  return null;
+                },
+                onSaved: (value) {
+                  // Save the username
+                },
               ),
               SizedBox(
                 height: 30,
@@ -67,37 +72,71 @@ class signup extends StatelessWidget {
               TextFormField(
                 keyboardType: TextInputType.emailAddress,
                 decoration: InputDecoration(
-                  labelText: "Email Address",
-                  // prefixIcon: Icon(
-                  //   Icon.email,) ,
+                  labelText: 'Email',
+                  hintText: 'Enter your email',
                   border: OutlineInputBorder(),
+                  icon: Icon(Icons.email),
                 ),
+                validator: (value) {
+                  if (value!.isEmpty) {
+                    return 'Please enter your email';
+                  }
+                  if (!RegExp(r"^[a-zA-Z0-9.]+@[a-zA-Z0-9]+\.[a-zA-Z]+")
+                      .hasMatch(value)) {
+                    return 'Please enter a valid email';
+                  }
+                  return null;
+                },
+                onSaved: (value) {
+                  // Save the email
+                },
               ),
               SizedBox(
                 height: 30,
                 // width: 20,
               ),
               TextFormField(
-                keyboardType: TextInputType.datetime,
+                keyboardType: TextInputType.number,
                 decoration: InputDecoration(
-                  labelText: "BD",
-                  // prefixIcon: Icon(
-                  //   Icon.email,) ,
+                  labelText: 'Age',
+                  hintText: 'Enter your age',
                   border: OutlineInputBorder(),
+                  icon: Icon(Icons.cake),
                 ),
+                validator: (value) {
+                  if (value!.isEmpty) {
+                    return 'Please enter your age';
+                  }
+                  if (int.tryParse(value) == null) {
+                    return 'Please enter a valid number';
+                  }
+                  return null;
+                },
+                onSaved: (value) {
+                  // Save the age
+                },
               ),
               SizedBox(
                 height: 30,
                 // width: 20,
               ),
               TextFormField(
-                keyboardType: TextInputType.visiblePassword,
+                obscureText: true,
                 decoration: InputDecoration(
-                  labelText: "password",
-                  // prefixIcon: Icon(
-                  //   Icon.email,) ,
+                  labelText: 'Password',
+                  hintText: 'Enter your password',
                   border: OutlineInputBorder(),
+                  icon: Icon(Icons.lock),
                 ),
+                validator: (value) {
+                  if (value!.isEmpty) {
+                    return 'Please enter your password';
+                  }
+                  return null;
+                },
+                onSaved: (value) {
+                  // Save the password
+                },
               ),
               SizedBox(
                 height: 40,

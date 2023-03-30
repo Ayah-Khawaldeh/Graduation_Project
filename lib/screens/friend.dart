@@ -8,9 +8,10 @@ class friend extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: const Color(0xFFCED0CC),
-        body: Center(
-          child: Text("HI Friend"),
-        ));
+      backgroundColor: const Color(0xFFCED0CC),
+      body: Center(
+        child: Text("HI Friend"),
+      ),
+    );
   }
 }

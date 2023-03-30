@@ -1,19 +1,9 @@
 import 'package:flutter/material.dart';
-// import 'package:flutter/services.dart';
-// import 'package:project1/screens/avatar.dart';
-import 'package:project1/widgets/home_icon_buttoms.dart';
-import 'package:project1/screens/profile.dart';
-// import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:project1/screens/registration.dart';
-import 'package:project1/screens/settings.dart';
-// import 'package:flutter/material.dart';
-// import 'package:project1/screens/home_icon_buttoms.dart';
-// import 'dart:js_util';
 
-import 'home.dart';
+import '../widgets/home_icon_buttoms.dart';
 
-class sub extends StatelessWidget {
-  const sub({super.key});
+class Learn extends StatelessWidget {
+  const Learn({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -59,7 +49,7 @@ class sub extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
                           Text(
-                            'HI sub',
+                            'HI Learn',
                             style: TextStyle(
                               color: Colors.black,
                               fontSize: 26,
@@ -69,19 +59,6 @@ class sub extends StatelessWidget {
                           SizedBox(
                             height: 10,
                           ),
-                          Container(
-                            child: Text(
-                              "Let's go choose Subcategory:",
-                              style: TextStyle(
-                                color: Colors.black,
-                                fontSize: 18,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                          ),
-                          SizedBox(
-                            height: 15,
-                          ),
                           Padding(
                             padding: EdgeInsets.only(top: 15),
                             child: Column(
@@ -90,92 +67,75 @@ class sub extends StatelessWidget {
                                   mainAxisAlignment:
                                       MainAxisAlignment.spaceEvenly,
                                   children: [
-                                    CatigorySingle(
+                                    Catigorys(
                                       image: 'assets/registration/splash.png',
-                                      text: 'Arabic',
-                                      color: Color(0xFF47B4FF),
+                                      text: 'Learn 1',
+                                      color: Color(0xFFFD8C44),
                                     ),
-                                    CatigorySingle(
+                                    Catigorys(
                                       image: 'assets/registration/splash.png',
-                                      text: 'English',
+                                      text: 'Learn 2',
                                       color: Color(0xFFA885FF),
-                                    ),
-                                    CatigorySingle(
-                                      image: 'assets/registration/splash.png',
-                                      text: 'Mathematics',
-                                      color: Color(0xFFE3CE82),
                                     )
                                   ],
                                 ),
                                 SizedBox(
-                                  height: 15,
+                                  height: 9,
                                 ),
                                 Row(
                                   mainAxisAlignment:
                                       MainAxisAlignment.spaceEvenly,
                                   children: [
-                                    CatigorySingle(
+                                    Catigorys(
                                       image: 'assets/registration/splash.png',
-                                      text: 'Sciences',
-                                      color: Color(0xFFFD47DF),
-                                    ),
-                                    CatigorySingle(
-                                      image: 'assets/registration/splash.png',
-                                      text: 'General',
-                                      color: Color(0xFFFD8C44),
-                                    ),
-                                    CatigorySingle(
-                                      image: 'assets/registration/splash.png',
-                                      text: 'Health',
-                                      color: Color(0xFFFFB6C1),
-                                    ),
-                                  ],
-                                ),
-                                SizedBox(height: 15),
-                                Row(
-                                  mainAxisAlignment:
-                                      MainAxisAlignment.spaceEvenly,
-                                  children: [
-                                    CatigorySingle(
-                                      image: 'assets/registration/splash.png',
-                                      text: 'Arabic',
+                                      text: 'Learn 3',
                                       color: Color(0xFF47B4FF),
                                     ),
-                                    CatigorySingle(
+                                    Catigorys(
                                       image: 'assets/registration/splash.png',
-                                      text: 'English',
-                                      color: Color(0xFFA885FF),
-                                    ),
-                                    CatigorySingle(
-                                      image: 'assets/registration/splash.png',
-                                      text: 'Mathematics',
-                                      color: Color(0xFFE3CE82),
+                                      text: ' Learn 4',
+                                      color: Color(0xFFFD8C44),
                                     )
                                   ],
                                 ),
-                                SizedBox(height: 15),
+                                SizedBox(
+                                  height: 9,
+                                ),
                                 Row(
                                   mainAxisAlignment:
                                       MainAxisAlignment.spaceEvenly,
                                   children: [
-                                    CatigorySingle(
+                                    Catigorys(
                                       image: 'assets/registration/splash.png',
-                                      text: 'Sciences',
-                                      color: Color(0xFFFD47DF),
-                                    ),
-                                    CatigorySingle(
-                                      image: 'assets/registration/splash.png',
-                                      text: 'General',
+                                      text: 'Learn 5',
                                       color: Color(0xFFFD8C44),
                                     ),
-                                    CatigorySingle(
+                                    Catigorys(
                                       image: 'assets/registration/splash.png',
-                                      text: 'Health',
-                                      color: Color(0xFFFFB6C1),
-                                    ),
+                                      text: 'Learn 6',
+                                      color: Color(0xFFA885FF),
+                                    )
                                   ],
                                 ),
-                                SizedBox(height: 15),
+                                SizedBox(
+                                  height: 9,
+                                ),
+                                Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceEvenly,
+                                  children: [
+                                    Catigorys(
+                                      image: 'assets/registration/splash.png',
+                                      text: 'Learn 7',
+                                      color: Color(0xFF47B4FF),
+                                    ),
+                                    Catigorys(
+                                      image: 'assets/registration/splash.png',
+                                      text: 'Learn 8',
+                                      color: Color(0xFFFD8C44),
+                                    )
+                                  ],
+                                ),
                               ],
                             ),
                           ),

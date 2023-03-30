@@ -1,27 +1,8 @@
 import 'dart:async';
-// import 'dart:js';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
 import 'package:flutter/material.dart';
 import 'package:project1/screens/registration.dart';
 
-// class splash extends StatelessWidget {
-//   const splash({super.key});
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       backgroundColor: Color(0xFFFCECDA),
-//       body: Center(
-//         child: Image(
-//           image: AssetImage(
-//             'assets/images/registration/splash.png',
-//           ),
-//         ),
-//       ),
-//     );
-//   }
-// }
 class splash extends StatefulWidget {
   const splash({super.key});
 
@@ -50,14 +31,14 @@ class _splashState extends State<splash> {
           gradient: LinearGradient(
             begin: Alignment.topRight,
             end: Alignment.bottomRight,
-            // colors: [Color(0xFF9BB491), Color(0xFFFFb6c1)],
-            // colors: [Color(0xFF9BB491), Color(0xFFFFb6c1)],
             colors: [
-              Color(0xFFFFB6C1),
+              // Color(0xFFFFB6C1),
               Color(0xFFE3CE82),
               Color(0xFF9BB491),
-              Color(0xFF9DC7DF),
-              Color(0xFFCED0CC)
+              // Color(0xFF9DC7DF),
+              // Color(0xFFCED0CC)
+              // Color(0xFFFFB6C1),
+              // Color(0xFF9DC7DF),
             ],
             // colors:  Colors.lightBlue,
             // backgroundColor: Color(0xFFFCECDA),
@@ -72,7 +53,7 @@ class _splashState extends State<splash> {
             Column(
               children: [
                 Image.asset(
-                  'assets/images/registration/splash.png',
+                  'assets/registration/splash.png',
                   height: 300,
                   width: 300,
                 ),

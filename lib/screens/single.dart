@@ -92,14 +92,13 @@ class single extends StatelessWidget {
                                       MainAxisAlignment.spaceEvenly,
                                   children: [
                                     CatigorySingle(
-                                      image:
-                                          'assets/images/registration/splash.png',
+                                      image: 'assets/registration/splash.png',
                                       text: 'Want',
                                       color: Color(0xFF47B4FF),
                                     ),
                                     // Catigory(
                                     //   image:
-                                    //       'assets/images/registration/splash.png',
+                                    //       'assets/registration/splash.png',
                                     //   text: 'Feel',
                                     //   color: Color(0xFFA885FF),
                                     // )
@@ -114,7 +113,7 @@ class single extends StatelessWidget {
                                 //   children: [
                                 //     Catigory(
                                 //       image:
-                                //           'assets/images/registration/splash.png',
+                                //           'assets/registration/splash.png',
                                 //       text: 'Learn',
                                 //       color: Color(0xFFFD47DF),
                                 //     ),

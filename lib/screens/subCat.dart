@@ -79,20 +79,18 @@ class subCat extends StatelessWidget {
                                       MainAxisAlignment.spaceEvenly,
                                   children: [
                                     CatigorySub(
-                                      image:
-                                          'assets/images/registration/splash.png',
-                                      text: 'Want',
+                                      image: 'assets/registration/splash.png',
+                                      text: 'Numbers',
                                       color: Color(0xFF47B4FF),
                                     ),
                                     CatigorySub(
-                                      image:
-                                          'assets/images/registration/splash.png',
-                                      text: 'Feel',
+                                      image: 'assets/registration/splash.png',
+                                      text: 'Letters',
                                       color: Color(0xFFA885FF),
                                     ),
                                     // CatigorySub(
                                     //   image:
-                                    //       'assets/images/registration/splash.png',
+                                    //       'assets/registration/splash.png',
                                     //   text: 'Stories',
                                     //   color: Color(0xFFE3CE82),
                                     // )
@@ -106,23 +104,15 @@ class subCat extends StatelessWidget {
                                       MainAxisAlignment.spaceEvenly,
                                   children: [
                                     CatigorySub(
-                                      image:
-                                          'assets/images/registration/splash.png',
-                                      text: 'Learn',
+                                      image: 'assets/registration/splash.png',
+                                      text: 'Animals',
                                       color: Color(0xFFFD47DF),
                                     ),
                                     CatigorySub(
-                                      image:
-                                          'assets/images/registration/splash.png',
-                                      text: 'Tests',
+                                      image: 'assets/registration/splash.png',
+                                      text: 'Food',
                                       color: Color(0xFFFD8C44),
                                     ),
-                                    // CatigorySub(
-                                    //   image:
-                                    //       'assets/images/registration/splash.png',
-                                    //   text: 'Play',
-                                    //   color: Color(0xFFFFB6C1),
-                                    // ),
                                   ],
                                 ),
                                 SizedBox(
@@ -133,26 +123,23 @@ class subCat extends StatelessWidget {
                                       MainAxisAlignment.spaceEvenly,
                                   children: [
                                     CatigorySub(
-                                      image:
-                                          'assets/images/registration/splash.png',
-                                      text: 'Play',
+                                      image: 'assets/registration/splash.png',
+                                      text: 'Drinks',
                                       color: Color(0xFF7DA4FF),
                                     ),
                                     CatigorySub(
-                                      image:
-                                          'assets/images/registration/splash.png',
-                                      text: 'Play',
+                                      image: 'assets/registration/splash.png',
+                                      text: 'Clothes',
                                       color: Color(0xFFFFB6C1),
                                     ),
                                     // CatigorySub(
                                     //   image:
-                                    //       'assets/images/registration/splash.png',
+                                    //       'assets/registration/splash.png',
                                     //   text: 'Stories',
                                     //   color: Color(0xFF43DC64),
                                     // )
                                   ],
                                 ),
-
                                 SizedBox(
                                   height: 15,
                                 ),
@@ -161,49 +148,17 @@ class subCat extends StatelessWidget {
                                       MainAxisAlignment.spaceEvenly,
                                   children: [
                                     CatigorySub(
-                                      image:
-                                          'assets/images/registration/splash.png',
-                                      text: 'Feel',
+                                      image: 'assets/registration/splash.png',
+                                      text: 'Numbers',
                                       color: Color(0xFFA885FF),
                                     ),
                                     CatigorySub(
-                                      image:
-                                          'assets/images/registration/splash.png',
-                                      text: 'Play',
+                                      image: 'assets/registration/splash.png',
+                                      text: 'Letters',
                                       color: Color(0xFFFFB6C1),
                                     ),
-                                    // CatigorySub(
-                                    //   image:
-                                    //       'assets/images/registration/splash.png',
-                                    //   text: 'Stories',
-                                    //   color: Color(0xFFE3CE82),
-                                    // )
                                   ],
                                 ),
-                                // Row(
-                                //   mainAxisAlignment:
-                                //       MainAxisAlignment.spaceEvenly,
-                                //   children: [
-                                //     CatigorySub(
-                                //       image:
-                                //           'assets/images/registration/splash.png',
-                                //       text: 'Feel',
-                                //       color: Color(0xFFA885FF),
-                                //     ),
-                                //     CatigorySub(
-                                //       image:
-                                //           'assets/images/registration/splash.png',
-                                //       text: 'Play',
-                                //       color: Color(0xFFFFB6C1),
-                                //     ),
-                                //     CatigorySub(
-                                //       image:
-                                //           'assets/images/registration/splash.png',
-                                //       text: 'Stories',
-                                //       color: Color(0xFFE3CE82),
-                                //     )
-                                //   ],
-                                // ),
                               ],
                             ),
                           ),

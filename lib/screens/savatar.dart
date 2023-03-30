@@ -65,9 +65,17 @@ class _MyHomePageState extends State<savatar> {
                 child: SizedBox(
                   height: 35,
                   child: ElevatedButton.icon(
-                    icon: const Icon(Icons.edit),
+                    icon: const Icon(Icons.book),
                     label: const Text(
                       "Learn",
+                    ),
+                    style: ElevatedButton.styleFrom(
+                      foregroundColor: Colors.black,
+                      backgroundColor: Color(0xFF9BB491), //elevation of button
+                      shape: RoundedRectangleBorder(
+                          //to set border radius to button
+                          borderRadius: BorderRadius.circular(20)),
+                      //content padding inside button
                     ),
                     onPressed: () => Navigator.push(context,
                         MaterialPageRoute(builder: (context) => home())),
@@ -89,20 +97,62 @@ class _MyHomePageState extends State<savatar> {
               const Spacer(flex: 2),
               Expanded(
                 flex: 3,
-                child: Container(
-                  color: const Color(0xFF9BB491),
+                child: SizedBox(
                   height: 35,
                   child: ElevatedButton.icon(
                     icon: const Icon(Icons.edit),
-                    label: const Text("Edit"),
+                    label: const Text(
+                      "Edit",
+                    ),
+                    style: ElevatedButton.styleFrom(
+                      foregroundColor: Colors.black,
+                      backgroundColor: Color(0xFF9BB491), //elevation of button
+                      shape: RoundedRectangleBorder(
+                          //to set border radius to button
+                          borderRadius: BorderRadius.circular(20)),
+                      //content padding inside button
+                    ),
                     onPressed: () => Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => const NewPage())),
+                        MaterialPageRoute(builder: (context) => NewPage())),
                   ),
                 ),
               ),
+              //      SizedBox(
+              //   height: 25,
+              // ),
+
               const Spacer(flex: 2),
             ],
           ),
+          // Row(
+          //   children: [
+          //     const Spacer(flex: 2),
+          //     Expanded(
+          //       flex: 3,
+          //       child: Container(
+          //         color: const Color(0xFF9BB491),
+          //         height: 35,
+          //         child: ElevatedButton.icon(
+          //           icon: const Icon(Icons.edit),
+          //           label: const Text("Edit"),
+          //           style: ElevatedButton.styleFrom(
+          //             foregroundColor: Colors.black,
+          //             backgroundColor: Color(0xFF9BB491), //elevation of button
+          //             shape: RoundedRectangleBorder(
+          //                 //to set border radius to button
+          //                 borderRadius: BorderRadius.circular(40)),
+          //             //content padding inside button
+          //           ),
+          //           onPressed: () => Navigator.push(
+          //               context,
+          //               MaterialPageRoute(
+          //                   builder: (context) => const NewPage())),
+          //         ),
+          //       ),
+          //     ),
+          //     const Spacer(flex: 2),
+          //   ],
+          // ),
           const SizedBox(
             height: 100,
           ),

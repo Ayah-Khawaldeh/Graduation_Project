@@ -53,7 +53,7 @@ class login_s extends StatelessWidget {
             // ),
 
             Image.asset(
-              "assets/images/registration/splash.png",
+              "assets/registration/splash.png",
               height: 400,
             ),
             // Spacer(),

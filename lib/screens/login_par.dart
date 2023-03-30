@@ -25,14 +25,8 @@ class login_par extends StatelessWidget {
                 end: Alignment.bottomRight,
                 // colors: [Color(0xFF9BB491), Color(0xFFFFb6c1)],
                 // colors: [Color(0xFF9BB491), Color(0xFFFFb6c1)],
-                colors: [
-                              // Color(0xFFFFB6C1),
+                colors: [Color(0xFF9BB491), Color(0xFFCED0CC)],
 
-                              Color(0xFFE3CE82),
-                              Color(0xFF9BB491),
-                              // // Color(0xFFCED0CC),
-                              // Color(0xFF9DC7DF),
-                            ],
                 // colors:  Colors.lightBlue,
                 // backgroundColor: Color(0xFFFCECDA),
 
@@ -46,7 +40,7 @@ class login_par extends StatelessWidget {
                 // width: 20,
               ),
               Image.asset(
-                "assets/images/registration/splash.png",
+                "assets/registration/splash.png",
                 height: 200,
               ),
               Text(
@@ -63,24 +57,46 @@ class login_par extends StatelessWidget {
               TextFormField(
                 keyboardType: TextInputType.emailAddress,
                 decoration: InputDecoration(
-                  labelText: "Email",
-                  // prefixIcon: Icon(
-                  //   Icon.email,) ,
+                  labelText: 'Email',
+                  hintText: 'Enter your email',
                   border: OutlineInputBorder(),
+                  icon: Icon(Icons.email),
                 ),
+                validator: (value) {
+                  if (value!.isEmpty) {
+                    return 'Please enter your email';
+                  }
+                  if (!RegExp(r"^[a-zA-Z0-9.]+@[a-zA-Z0-9]+\.[a-zA-Z]+")
+                      .hasMatch(value)) {
+                    return 'Please enter a valid email';
+                  }
+                  return null;
+                },
+                onSaved: (value) {
+                  // Save the email
+                },
               ),
               SizedBox(
                 height: 40,
                 // width: 20,
               ),
               TextFormField(
-                keyboardType: TextInputType.visiblePassword,
+                obscureText: true,
                 decoration: InputDecoration(
-                  labelText: "Password",
-                  // prefixIcon: Icon(
-                  //   Icon.email,) ,
+                  labelText: 'Password',
+                  hintText: 'Enter your password',
                   border: OutlineInputBorder(),
+                  icon: Icon(Icons.lock),
                 ),
+                validator: (value) {
+                  if (value!.isEmpty) {
+                    return 'Please enter your password';
+                  }
+                  return null;
+                },
+                onSaved: (value) {
+                  // Save the password
+                },
               ),
               SizedBox(
                 height: 40,
