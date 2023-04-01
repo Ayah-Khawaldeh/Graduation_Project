@@ -38,6 +38,7 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   # cupertino_icons: ^1.0.2
   cupertino_icons: any
+  get:
   splashscreen: ^1.3.5
   flutter_svg: any
   ionicons: ^0.2.2
@@ -86,6 +87,8 @@ flutter:
   #   - images/Logo.png
   assets:
     - assets/registration/splash.png
+    - assets/learn/
+
 
   
 

@@ -80,6 +80,7 @@ class _QuizState extends State<Quiz> {
 
             Text(
               'Question ${currentQuestion + 1}/${questions.length}',
+              // ignore: prefer_const_constructors
               style: TextStyle(
                 fontSize: 18.0,
                 fontWeight: FontWeight.bold,

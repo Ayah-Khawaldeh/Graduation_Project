@@ -1,0 +1,54 @@
+import 'package:flutter/material.dart';
+import 'package:flutter/src/widgets/framework.dart';
+import 'package:flutter/src/widgets/placeholder.dart';
+
+class Header extends StatelessWidget {
+  Header({required this.text});
+  final String text;
+
+  @override
+  Widget build(BuildContext context) {
+    return Text(
+      text,
+      style: TextStyle(fontSize: 3, fontWeight: FontWeight.bold),
+    );
+  }
+}
+
+class SubHeader extends StatelessWidget {
+  SubHeader({required this.text});
+  final String text;
+  @override
+  Widget build(BuildContext context) {
+    return Opacity(
+      opacity: 0.7,
+      child: Text(
+        text,
+        style: TextStyle(
+          fontSize: 20,
+          fontWeight: FontWeight.bold,
+        ),
+      ),
+    );
+  }
+}
+
+class PictureCard extends StatelessWidget {
+  PictureCard({required this.imageUrl});
+  final String imageUrl;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: EdgeInsets.all(10),
+      child: FadeInImage.assetNetwork(
+        image: imageUrl,
+        placeholder: 'assets/learn/loding.gif',
+      ),
+      decoration: BoxDecoration(borderRadius: BorderRadius.circular(20)),
+      height: 100,
+      width: 150,
+      margin: EdgeInsets.only(left: 10, right: 10),
+    );
+  }
+}

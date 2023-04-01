@@ -21,17 +21,21 @@ class login_par extends StatelessWidget {
             // width: MediaQuery.of(context).size.width,
             decoration: BoxDecoration(
               gradient: LinearGradient(
-                begin: Alignment.topRight,
-                end: Alignment.bottomRight,
-                // colors: [Color(0xFF9BB491), Color(0xFFFFb6c1)],
-                // colors: [Color(0xFF9BB491), Color(0xFFFFb6c1)],
-                colors: [Color(0xFF9BB491), Color(0xFFCED0CC)],
+                  begin: Alignment.topRight,
+                  end: Alignment.bottomRight,
+                  // colors: [Color(0xFF9BB491), Color(0xFFFFb6c1)],
+                  // colors: [Color(0xFF9BB491), Color(0xFFFFb6c1)],
+                  colors: [
+                    Color(0xFFFFB6C1),
+                    Color(0xFF9DC7DF),
+                    Color(0xFF9BB491),
+                  ]
 
-                // colors:  Colors.lightBlue,
-                // backgroundColor: Color(0xFFFCECDA),
+                  // colors:  Colors.lightBlue,
+                  // backgroundColor: Color(0xFFFCECDA),
 
-                // colors: [Color(0xFF9BB491), Color(0xFFE3CE82)],
-              ),
+                  // colors: [Color(0xFF9BB491), Color(0xFFE3CE82)],
+                  ),
             ),
             padding: EdgeInsets.symmetric(horizontal: 30, vertical: 30),
             child: Column(children: [

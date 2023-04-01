@@ -20,7 +20,7 @@ class _HomeLayoutState extends State<HomeLayout> {
     /// Init Alan Button with project key from Alan Studio
     AlanVoice.addButton(
         buttonAlign: 5,
-        "47f528a095bd50046cb091ec8c2622f22e956eca572e1d8b807a3e2338fdd0dc/stage",
+        "9167953ce068bc6525ee2621df9858f62e956eca572e1d8b807a3e2338fdd0dc/stage",
         bottomMargin: 100);
 
     /// Handle commands from Alan Studio

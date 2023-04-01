@@ -3,9 +3,6 @@ import 'package:flutter/services.dart';
 import 'package:project1/screens/home_layout.dart';
 import 'package:project1/screens/splash.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-// import 'package:project1/screens/login.dart';
-// import 'package:project1/screens/signup.dart';
-// import 'package:project1/screens/registration.dart';
 
 void main() {
   SystemChrome.setSystemUIOverlayStyle(
@@ -24,12 +21,6 @@ class MyWidget extends StatelessWidget {
           return const MaterialApp(
             debugShowCheckedModeBanner: false,
             title: 'AIA Demo',
-//             theme: ThemeData(
-//               // primarySwatch: Colors.grey,
-//               //  primaryColor: Color.,
-//               // primaryColor: Colors.white38,
-                 // backgroundColor: Colors.white38,
-//               //  primarySwatch: Color.orange
 //             ),
             home: splash(),
           );

@@ -23,7 +23,12 @@ class login_s extends StatelessWidget {
             end: Alignment.bottomRight,
             // colors: [Color(0xFF9BB491), Color(0xFFFFb6c1)],
             // colors: [Color(0xFF9BB491), Color(0xFFFFb6c1)],
-            colors: [Color(0xFFFFB6C1), Color(0xFF9DC7DF), Color(0xFFCED0CC)],
+            colors: [
+              Color(0xFFFFB6C1),
+              Color(0xFF9DC7DF),
+              Color(0xFF9BB491),
+            ],
+
             // colors:  Colors.lightBlue,
             // backgroundColor: Color(0xFFFCECDA),
 

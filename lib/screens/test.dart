@@ -1,98 +1,73 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/src/widgets/framework.dart';
+import 'package:flutter/src/widgets/placeholder.dart';
+import 'package:get/get.dart';
+import 'Learn/screens/detailspage.dart';
+import 'Learn/widets/cards.dart';
+import 'Learn/screens/detailspage.dart';
 
-class LearningScreen extends StatefulWidget {
+import 'Learn/data.dart';
+
+class Test extends StatefulWidget {
   @override
-  _LearningScreenState createState() => _LearningScreenState();
+  _TestState createState() => _TestState();
 }
 
-class _LearningScreenState extends State<LearningScreen> {
-  final List<String> topics = [
-    'Alphabet',
-    'Numbers',
-    'Shapes',
-    'Colors',
-  ];
+class _TestState extends State<Test> {
+  List<AnimalInfo> animals = [];
 
-  String selectedTopic = '';
+  @override
+  void initState() {
+    animals = animallist;
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Learn'),
-        backgroundColor: Color(0xFF9BB491),
-      ),
-      body: Padding(
-        padding: EdgeInsets.all(16.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(
-              'Select a topic to learn:',
-              style: TextStyle(
-                fontSize: 20.0,
-                fontWeight: FontWeight.bold,
-              ),
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(
+          title: Text(
+            'Learn',
+            style: TextStyle(
+              color: Colors.black,
+              fontSize: 30,
             ),
-            SizedBox(height: 16.0),
-            Expanded(
-              child: ListView.builder(
-                itemCount: topics.length,
-                itemBuilder: (context, index) {
-                  return GestureDetector(
-                    onTap: () {
-                      setState(() {
-                        selectedTopic = topics[index];
-                      });
-                    },
-                    child: Container(
-                      padding: EdgeInsets.symmetric(
-                        vertical: 16.0,
-                        horizontal: 8.0,
-                      ),
-                      decoration: BoxDecoration(
-                        color: selectedTopic == topics[index]
-                            ? Color(0xFF9BB491)
-                            : Colors.white,
-                        borderRadius: BorderRadius.circular(8.0),
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.grey.withOpacity(0.5),
-                            spreadRadius: 1,
-                            blurRadius: 3,
-                            offset: Offset(0, 3),
-                          ),
-                        ],
-                      ),
-                      child: Text(
-                        topics[index],
-                        style: TextStyle(
-                          fontSize: 18.0,
-                          fontWeight: FontWeight.bold,
-                          color: selectedTopic == topics[index]
-                              ? Colors.white
-                              : Colors.black,
-                        ),
-                      ),
-                    ),
-                  );
-                },
-              ),
+          ),
+          centerTitle: true,
+          elevation: 0,
+          backgroundColor: Colors.white,
+          leading: Icon(
+            Icons.filter_list,
+            color: Colors.amber,
+            size: 40,
+          ),
+          actions: <Widget>[
+            Image(
+              image: AssetImage("assets/learn/deer.png"),
             ),
-            SizedBox(height: 16.0),
-            if (selectedTopic != '')
-              Expanded(
-                child: Center(
-                  child: Text(
-                    'You selected $selectedTopic',
-                    style: TextStyle(
-                      fontSize: 24.0,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                ),
-              ),
           ],
+        ),
+        body: ListView.builder(
+          shrinkWrap: true,
+          padding: EdgeInsets.all(5),
+          itemCount: animals.length,
+          itemBuilder: (context, index) => Cards(
+            animal: animals[index],
+            onPressed: () {
+              //  Get.testMode = true;
+              // Get.to(
+              //   DetailsPage(
+              //     animal: animals[index],
+              //   ),
+              // );
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => DetailsPage(animal: animals[index])),
+              );
+            },
+          ),
         ),
       ),
     );

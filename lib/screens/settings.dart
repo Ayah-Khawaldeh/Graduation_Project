@@ -52,7 +52,7 @@ class _SettingsScreenState extends State<settings> {
                 onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => LearningScreen()),
+                    MaterialPageRoute(builder: (context) => Test()),
                   );
                 },
               ),
